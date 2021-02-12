@@ -8,17 +8,21 @@
   overflow-x: scroll;
 }
 
-.header_icon > .MuiSvgIcon-root {
+.header__icon > .MuiSvgIcon-root {
   font-size: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header_icon:hover > p {
-  display: inline;
+.header__icon--active > p {
+  display: inline-flex !important;
 }
 
-.header_icon > p {
+.header__icon:hover > p {
+  display: inline-flex;
+}
+
+.header__icon > p {
   display: none;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -27,7 +31,7 @@
   font-size: small;
 }
 
-.header_icon {
+.header__icon {
   display: flex;
   flex-direction: column;
   cursor: pointer;
